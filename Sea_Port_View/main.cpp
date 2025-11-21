@@ -4,6 +4,7 @@
 #define PI        3.14159265358979323846
 
 
+
 /* Handler for window-repaint event. Call back when the window first appears and
 whenever the window needs to be re-painted. */
 void renderBitmapString(float x, float y, float z, void *font, char *string)
@@ -2882,6 +2883,7 @@ int main(int argc, char** argv) {
     glutTimerFunc(100, nighttruckMove, 0);
     glutTimerFunc(1000, nighttruck2Move, 0);
 
+	
     ///rain
     glutTimerFunc(100, raincloud1Move, 0);
     glutTimerFunc(100, raincloud2Move, 0);
@@ -2891,6 +2893,7 @@ int main(int argc, char** argv) {
     glutTimerFunc(2000, rainfall2, 0);
 
 
+	
     //daySound();
     glutMainLoop(); // Enter the event-processing loop
     return 0;
